@@ -3,14 +3,37 @@
 <head>
 
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semáforo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Olá Mundo</h1>
 
+    <header>
+        <h1>Semáforo</h1>
+        <p>Precione os botões para alterar a cor do sinal: </p>
+    </header>
 
+    <main>
+        <img id="imagem" src="Imagens/desligado.png" alt="">
+
+            <div>
+                <button id="vermelho" onclick="vermelho()">Vermelho</button>
+                <button id="amarelo" onclick="amarelo()">Amarelo</button>
+                <button id="verde" onclick="verde()">Verde</button>
+            </div>
+
+            <div>
+                <label for="numero">Quantos Segundos? (máx. 60s) </label>
+                <input type="number" id="numero">
+                <button id="start" onclick="comecarContagem()">Começar!</button>
+                <button id="stop" onclick="pararContagem()">Parar</button>
+            </div>
+
+            <div>
+                <button id="desligado" onclick="desligar()">Desligar</button>
+            </div>
+    </main>
 <script src="script.js"></script>
 </body>
 </html>

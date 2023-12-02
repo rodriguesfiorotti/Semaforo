@@ -1,3 +1,33 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
 h1{
     color: red;
+}
+
+main{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#imagem {
+    margin-top: 0px;
+}
+
+main div {
+    margin-top: 20px;
 }
